@@ -1,0 +1,155 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e9f2f9; /* Lighter shade of blue for background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #0a1128, #002244); /* Deep navy blue gradient */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 0 0 30px 30px;
+}
+
+.header h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.header .subtitle {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Main Content and Sidebar Layout */
+.main-content {
+    background-color: #f4f7fa; /* A slightly lighter background for the main area */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Portfolio Cards */
+.portfolio-card {
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.portfolio-card .card-header {
+    font-weight: 600;
+    color: white;
+    font-size: 1.2rem;
+    background: linear-gradient(90deg, #0056b3, #007bff); /* Blue gradient for card headers */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.portfolio-card .card-body {
+    background: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Experience Section Specific Styling */
+.job-item h4 {
+    color: #002244; /* Dark navy for job titles */
+    margin-bottom: 5px;
+}
+
+.achievements-list {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 0;
+}
+
+.achievements-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+}
+
+.achievements-list li::before {
+    content: '\2022'; /* Unicode for a solid bullet point */
+    color: #48a9ca; /* A nice blue color for the bullet */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Skills */
+.skills-list span {
+    display: inline-block;
+    background: #0056b3; /* Blue background for skill tags */
+    color: white;
+    padding: 5px 12px;
+    margin: 4px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    transition: background 0.3s;
+}
+
+.skills-list span:hover {
+    background: #8ea1b5; /* Lighter blue on hover */
+}
+
+/* Floating Chatbot */
+#chatbot-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 320px;
+    max-height: 450px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#chat-header {
+    font-weight: bold;
+    background-color: #0056b3; /* Consistent with new blue palette */
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+#chat-input {
+    padding: 6px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    flex: none;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header .subtitle {
+        font-size: 1rem;
+    }
+}

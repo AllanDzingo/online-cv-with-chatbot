@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Allan Dzingo - Online CV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header class="header">
+    <div class="container text-center">
+        <h1>Allan Davies Dzingo</h1>
+        <p class="subtitle">Aspiring Cloud & ML Engineer | Python | AI | Cloud Solutions</p>
+    </div>
+</header>
+
+<main class="container mt-5">
+    <div class="row">
+        <!-- Left Column -->
+        <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card portfolio-card hover-card">
+                <div class="card-header"><i class="fas fa-user"></i> About Me</div>
+                <div class="card-body">
+                    <p>Passionate about cloud computing, AI, and building intelligent solutions that solve real-world problems.</p>
+                </div>
+            </div>
+
+            <div class="card portfolio-card hover-card mt-4">
+                <div class="card-header"><i class="fas fa-lightbulb"></i> Skills</div>
+                <div class="card-body skills-list">
+                    <span><i class="fab fa-python"></i> Python</span>
+                    <span><i class="fab fa-aws"></i> AWS</span>
+                    <span><i class="fab fa-azure"></i> Azure</span>
+                    <span><i class="fas fa-robot"></i> Machine Learning</span>
+                    <span><i class="fas fa-database"></i> SQL</span>
+                    <span><i class="fas fa-code"></i> Flask</span>
+                    <span><i class="fas fa-cogs"></i> CI/CD</span>
+                    <span><i class="fas fa-network-wired"></i> IT Operations</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-lg-8 col-md-12">
+            <div class="card portfolio-card hover-card">
+                <div class="card-header"><i class="fas fa-briefcase"></i> Experience</div>
+                <div class="card-body">
+                    <p><strong><h3>Systems Administrator</strong> at Excellence Questo </h3>
+                        <ul><li>
+                                <b>Successfully migrated on-premises infrastructure to Azure</b>, resulting in a 35% reduction in system downtime and a 20% decrease in operational costs.
+                            </li><li><b>Implemented an AI-driven predictive maintenance system</b> that reduced unscheduled downtime by forecasting and proactively addressing hardware failures.
+                            </li><li><b>Automated Azure management</b> with PowerShell and Azure CLI scripts, streamlining resource provisioning and increasing team efficiency.
+                            </li><li><b>Pioneered a "self-healing" infrastructure</b>, using automation and AI-powered runbooks to automatically resolve common system issues and reduce manual intervention by 80%.
+                            </li><li><b>Utilized AI-powered SIEM to automate incident response</b>, enhancing network security by identifying and neutralizing threats in real-time.
+                            </li>
+                        </ul>
+                    </p>
+                            <p><strong>AI Data Trainer</strong> at Invisible Inc – Prompt engineering, data annotation, labeling for AI systems.</p>
+                </div>
+            </div>
+
+            <div class="card portfolio-card hover-card mt-4">
+                <div class="card-header"><i class="fas fa-graduation-cap"></i> Education & Certifications</div>
+                <div class="card-body">
+                    <p> <ul><li>Diploma in Machine Learning using Python</li> <li>AWS Solution Architect Associate</li><li> Google IT Support Professional</li><li> Chemical Engineering </li><li> Introduction to Agile & Scrum.</li><li> Additional certifications in progress.</li></ul></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Floating Chatbot Widget -->
+<div id="chatbot-widget">
+    <div id="chat-header"><i class="fas fa-comments"></i> Chat with my CV</div>
+    <div id="chat-messages"></div>
+    <input type="text" id="chat-input" placeholder="Ask me about skills, experience, or education...">
+    <button onclick="sendMessage()" class="btn btn-primary btn-sm">Send</button>
+</div>
+
+<script>
+async function sendMessage() {
+    let input = document.getElementById("chat-input").value;
+    if(!input) return;
+    let response = await fetch("/chat", {
+        method: "POST",
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        body: "message=" + encodeURIComponent(input)
+    });
+    let data = await response.json();
+    const messages = document.getElementById("chat-messages");
+    messages.innerHTML += "<p><b>You:</b> " + input + "</p>";
+    messages.innerHTML += "<p><b>Bot:</b> " + data.response + "</p>";
+    document.getElementById("chat-input").value = "";
+    messages.scrollTop = messages.scrollHeight;
+}
+</script>
+</body>
+</html>
