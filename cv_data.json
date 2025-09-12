@@ -1,0 +1,69 @@
+{
+  "profile": {
+    "name": "Allan Dzingo",
+    "title": "Chemical Engineer | AWS Solutions Architect | Machine Learning | AI Data Trainer",
+    "location": "Madibeng, North-West, South Africa",
+    "contact": {
+      "email": "allandzingo@gmail.com",
+      "linkedin": "www.linkedin.com/in/allandzingo"
+    },
+    "summary": "With over a decade of progressive experience, I've honed my skills in Python, machine learning, and artificial intelligence, most recently as an Advanced AI Data Trainer at Invisible."
+  },
+  "skills": [
+    "IT Projects",
+    "IT Operations",
+    "CI/CD",
+    "Python",
+    "Machine Learning",
+    "AWS Cloud Architecture"
+  ],
+  "experience": [
+    {
+      "role": "System Administrator",
+      "company": "Excellence Questo",
+      "dates": "Aug 2022 till Present",
+      "location": "Brits, South Africa",
+      "responsibilities": [
+        "Managed network security services and user training",
+        "Automated troubleshooting with Windows CLI",
+        "Installed and maintained hardware"
+      ]
+    },
+    {
+      "role": "Advanced AI Data Trainer",
+      "company": "Invisible",
+      "dates": " 2024 to Aug 2025",
+      "location": "United States",
+      "responsibilities": [
+        "Worked on advanced AI data training tasks for ML/AI model development"
+      ]
+    },
+    {
+      "role": "IT Technician & Educator",
+      "company": "Lighthouse Christian College",
+      "dates": " 2019 to 2022",
+      "location": "Brits, South Africa",
+      "responsibilities": [
+        "Provided IT support and managed internal networks",
+        "Handled servers, troubleshooting, and vendor engagement"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "qualification": "BASc in Chemistry",
+      "institution": "National University of Science and Technology (ZW)",
+      "dates": "2009 to 2014"
+    },
+    {
+      "qualification": "Diploma in AWS Solutions Architect Associate",
+      "institution": "Alison",
+      "dates": "2024"
+    },
+    {
+      "qualification": "Diploma in Machine Learning with Python",
+      "institution": "Alison",
+      "dates": "2023 to 2024"
+    }
+  ]
+}
