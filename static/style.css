@@ -1,14 +1,14 @@
 /* Global Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #e9f2f9; /* Lighter shade of blue for background */
+    background: #ffffff; /* Lighter shade of blue for background */
     margin: 0;
     padding: 0;
 }
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, #0a1128, #002244); /* Deep navy blue gradient */
+    background: linear-gradient(135deg, #14213d, #000000); /* Deep navy blue gradient */
     color: white;
     padding: 60px 20px;
     text-align: center;
@@ -49,7 +49,7 @@ body {
     font-weight: 600;
     color: white;
     font-size: 1.2rem;
-    background: linear-gradient(90deg, #0056b3, #007bff); /* Blue gradient for card headers */
+    background: linear-gradient(90deg, #fca311, #e5e5e5); /* Blue gradient for card headers */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -63,7 +63,7 @@ body {
 
 /* Experience Section Specific Styling */
 .job-item h4 {
-    color: #002244; /* Dark navy for job titles */
+    color: #c0c7ce; /* Dark navy for job titles */
     margin-bottom: 5px;
 }
 
@@ -120,7 +120,7 @@ body {
 
 #chat-header {
     font-weight: bold;
-    background-color: #0056b3; /* Consistent with new blue palette */
+    background-color: #d89d1b; /* Consistent with new blue palette */
     color: white;
     padding: 10px;
     border-radius: 12px;
