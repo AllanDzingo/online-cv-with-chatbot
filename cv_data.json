@@ -1,69 +1,96 @@
 {
-  "profile": {
-    "name": "Allan Dzingo",
-    "title": "Chemical Engineer | AWS Solutions Architect | Machine Learning | AI Data Trainer",
-    "location": "Madibeng, North-West, South Africa",
-    "contact": {
-      "email": "allandzingo@gmail.com",
-      "linkedin": "www.linkedin.com/in/allandzingo"
-    },
-    "summary": "With over a decade of progressive experience, I've honed my skills in Python, machine learning, and artificial intelligence, most recently as an Advanced AI Data Trainer at Invisible."
+  "name": "Allan Dzingo",
+  "contact": {
+    "phone": "+27 67 048 4567",
+    "email": "allandzingo@gmail.com",
+    "location": "Brits, South Africa",
+    "linkedin": "https://www.linkedin.com/in/allandzingo/",
+    "website": "https://www.allandzingo.online",
+    "github": "https://github.com/AllanDzingo"
   },
-  "skills": [
-    "IT Projects",
-    "IT Operations",
-    "CI/CD",
-    "Python",
-    "Machine Learning",
-    "AWS Cloud Architecture"
-  ],
+  "title": "DevOps & Cloud Engineer",
+  "summary": "DevOps & Cloud Engineer with hands-on experience across AWS, Azure, and GCP. Skilled in automating infrastructure, container orchestration, and CI/CD workflows. Proven success deploying cost-optimized cloud architectures with 99.9% uptime, observability systems, and scalable microservice deployments.",
+  "skills": {
+    "cloud_platforms": ["AWS", "Azure", "GCP", "Fly.io"],
+    "infrastructure_as_code": ["Terraform", "CloudFormation"],
+    "containers_orchestration": ["Docker", "Kubernetes", "Helm"],
+    "ci_cd": ["GitHub Actions", "Jenkins"],
+    "scripting": ["Bash", "Python"],
+    "version_control": ["Git", "GitHub"],
+    "monitoring": ["Prometheus", "Grafana", "Alertmanager"],
+    "security_and_networking": ["SSL", "DNS", "VPC", "IAM", "Load Balancers"],
+    "methodologies": ["Agile", "Scrum", "SRE", "Incident Response"]
+  },
   "experience": [
     {
-      "role": "System Administrator",
+      "role": "Cloud & DevOps Engineer",
       "company": "Excellence Questo",
-      "dates": "Aug 2022 till Present",
       "location": "Brits, South Africa",
-      "responsibilities": [
-        "Managed network security services and user training",
-        "Automated troubleshooting with Windows CLI",
-        "Installed and maintained hardware"
+      "years": "August 2022 - Present",
+      "accomplishments": [
+        "Designed and deployed 'Excellence App', a cloud-native learning platform used by 200+ users.",
+        "Architected multi-cloud infrastructure (GCP + AWS) using Terraform, reducing costs by 30%.",
+        "Implemented GitHub Actions CI/CD pipelines enabling automated deployments.",
+        "Containerized services with Docker and deployed Kubernetes clusters for scalability.",
+        "Integrated Prometheus + Grafana monitoring with 99.9% uptime.",
+        "Integrated OpenAI APIs for real-time intelligent tutoring features."
       ]
     },
     {
-      "role": "Advanced AI Data Trainer",
-      "company": "Invisible",
-      "dates": " 2024 to Aug 2025",
-      "location": "United States",
-      "responsibilities": [
-        "Worked on advanced AI data training tasks for ML/AI model development"
+      "role": "Advanced AI Data Trainer & Chemical Engineer",
+      "company": "Invisible Technologies",
+      "location": "Remote",
+      "years": "2024 - 2025",
+      "accomplishments": [
+        "Ensured dataset accuracy and quality within ML training pipelines.",
+        "Performed dataset versioning and reproducibility best practices.",
+        "Worked across ML model development lifecycle: training, validation and monitoring.",
+        "Automated workflows using scripting to enhance operational efficiency."
       ]
     },
     {
       "role": "IT Technician & Educator",
       "company": "Lighthouse Christian College",
-      "dates": " 2019 to 2022",
       "location": "Brits, South Africa",
-      "responsibilities": [
-        "Provided IT support and managed internal networks",
-        "Handled servers, troubleshooting, and vendor engagement"
+      "years": "2019 - 2022",
+      "accomplishments": [
+        "Administered IT systems, servers, networks and user accounts.",
+        "Automated administrative tasks using Python and Bash.",
+        "Configured cloud and virtual machine environments for learning development.",
+        "Delivered training on technology workflows, cloud services, Git, and DevOps concepts.",
+        "Monitored and optimized system performance and reliability."
       ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Online CV & Chatbot",
+      "url": "https://www.allandzingo.online",
+      "description": "Personal portfolio website deployed with Fly.io, including AI chatbot, CI/CD automation, SSL setup, and observability via Grafana."
+    },
+    {
+      "name": "Excellence App",
+      "description": "Scalable cloud-native education platform built using GCP, Kubernetes, Terraform, and GitHub Actions CI/CD."
+    },
+    {
+      "name": "AI Tutor Bot",
+      "description": "OpenAI-powered personalized learning assistant embedded into the Excellence App ecosystem."
     }
   ],
   "education": [
     {
-      "qualification": "BASc in Chemistry",
-      "institution": "National University of Science and Technology (ZW)",
-      "dates": "2009 to 2014"
-    },
-    {
-      "qualification": "Diploma in AWS Solutions Architect Associate",
-      "institution": "Alison",
-      "dates": "2024"
-    },
-    {
-      "qualification": "Diploma in Machine Learning with Python",
-      "institution": "Alison",
-      "dates": "2023 to 2024"
+      "degree": "BSc Honours in Applied Chemistry",
+      "institution": "National University of Science and Technology, Zimbabwe",
+      "year": 2014
     }
-  ]
+  ],
+  "certifications": [
+    "Google Associate Cloud Engineer (In Progress, Completion December 2025)",
+    "Certified Kubernetes Administrator (In Progress, Feb 2026)",
+    "AWS Solutions Architect – Associate (2024, Alison)",
+    "Google IT Support Professional Certificate (2024, Coursera)",
+    "Machine Learning with Python (2024, Alison)",
+    "Introduction to Agile & Scrum (2024, Coursera)"
+  ],
+  "professional_development": "Active member of DevOps and SRE learning communities, continuously improving in automation, observability, and resilient system design."
 }
